@@ -41,7 +41,7 @@ mybatis:
     map-underscore-to-camel-case: true
     
 mybatis-plus:
-  mapper-locations: classpath:mysite.cardstore/mapper/*.xml 
+  mapper-locations: classpath:com.mysite.cardstoreadmin/mapper/*.xml 
   configuration:
     map-underscore-to-camel-case: true    
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
