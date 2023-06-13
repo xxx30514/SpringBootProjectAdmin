@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mysite.cardstoreadmin.mapper.EmpMapper">
+	<!-- public Emp getEmp(@Param("empId") Integer empId); -->
+	<select id="getEmp" resultType="com.mysite.cardstoreadmin.pojo.Emp">
+		select * from t_emp where emp_id = #{empId}
+	</select>
+	<!-- int insertEmp(Emp emp);  -->
+	<insert id="insertEmp">
+		insert into t_emp
+		values(null,#{empName},#{empAge},#{empGender},#{deptId})
+	</insert>
+</mapper>
